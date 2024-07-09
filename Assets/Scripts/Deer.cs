@@ -35,6 +35,10 @@ public class Deer : MonoBehaviour {
             touchingTree = true;
             strafeSide = Random.Range(0, 2);
         }
+        if (col.gameObject.tag == "deer") {
+            touchingTree = true;
+            speed *= 2;
+        }
     }
 
     void OnCollisionExit(Collision col) {
