@@ -14,6 +14,10 @@ public class GameUI : MonoBehaviour {
 
     void Update() {
         deadDeer.text = "dead deer: " + gm.deadDeer;
-        money.text = "money: " + gm.money;
+        money.text = "money: $" + gm.money;
+        foreach (Upgrade upgrade in gm.upgrades) {
+            upgrade.priceText.text = "$" + upgrade.cost.ToString();
+            upgrade.ownedCountText.text = upgrade.ownedCount.ToString();
+        }
     }
 }
