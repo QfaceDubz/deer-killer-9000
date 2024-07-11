@@ -5,7 +5,7 @@ using UnityEngine;
 public class Deer : MonoBehaviour {
     bool touchingTree;
     float speed = 900;
-    public int strafeSide; // left or right, but it's a bool
+    public double strafeSide; // left or right, but it's a bool
     Rigidbody rb;
     public List<Material> sprites;
 

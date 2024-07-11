@@ -363,27 +363,27 @@ MonoBehaviour:
     cost: 5
     ownedCount: 0
     priceMod: 2
-    increaseType: 0
+    increaseType: 1
     priceText: {fileID: 508101364}
     ownedCountText: {fileID: 906577497}
   - name: hunter time
     cost: 10
     ownedCount: 0
     priceMod: 2
-    increaseType: 0
+    increaseType: 1
     priceText: {fileID: 1310916342}
     ownedCountText: {fileID: 1310916341}
   - name: hunter money
     cost: 10
     ownedCount: 0
-    priceMod: 1.25
+    priceMod: 1.6
     increaseType: 1
     priceText: {fileID: 1159474400}
     ownedCountText: {fileID: 1159474399}
   - name: deer money
     cost: 15
     ownedCount: 0
-    priceMod: 1.4
+    priceMod: 1.8
     increaseType: 1
     priceText: {fileID: 1274779838}
     ownedCountText: {fileID: 1274779837}
