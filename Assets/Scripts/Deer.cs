@@ -7,10 +7,12 @@ public class Deer : MonoBehaviour {
     float speed = 900;
     public int strafeSide; // left or right, but it's a bool
     Rigidbody rb;
+    public List<Material> sprites;
 
     void Start() {
         rb = GetComponent<Rigidbody>();
         strafeSide = Random.Range(0, 2);
+        GetComponent<MeshRenderer>().material = sprites[Random.Range(0, sprites.Count)];
     }
 
     void Update() {

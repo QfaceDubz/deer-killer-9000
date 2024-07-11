@@ -148,3 +148,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strafeSide: 0
+  sprites:
+  - {fileID: 2100000, guid: 57168516705e748d9b4ba1f4bc540a91, type: 2}
+  - {fileID: 2100000, guid: 5a3313b33849f40d881a67b35108ccd5, type: 2}
