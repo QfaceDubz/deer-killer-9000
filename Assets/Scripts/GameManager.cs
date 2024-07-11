@@ -39,11 +39,14 @@ public class GameManager : MonoBehaviour {
 
         // hunter shooting
         if (hunterShootTimer > hunterInterval && upgrades[0].ownedCount > 0) {
-            money += (int)Mathf.Round(hunterBase + (upgrades[0].ownedCount/2) * (upgrades[2].ownedCount/2));
+            money += (int)Mathf.Round(hunterBase + hunterBase* upgrades[0].ownedCount/2 + upgrades[2].ownedCount * 2);
             hunterShootTimer = 0;
         } else {
-            hunterShootTimer += Time.deltaTime;
+            hunterShootTimer += (Time.deltaTime + (Time.deltaTime * upgrades[1].ownedCount/2));
         }
+
+        // p to toggle shop
+        if (Input.GetKeyDown(KeyCode.P)) ToggleShop();
     }
 
     public void MouseClick() {
